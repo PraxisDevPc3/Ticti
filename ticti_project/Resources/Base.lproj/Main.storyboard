@@ -273,7 +273,7 @@
                                     <action selector="registrarFuncao:" destination="AfN-04-8Se" eventType="touchUpInside" id="xz5-eG-9CL"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-yM-SRJ">
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-yM-SRJ">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <animations/>
                                 <constraints>
@@ -281,7 +281,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Registro" id="sdj-SH-FwL">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="lan-w6-SEg">
+                                        <barButtonItem key="leftBarButtonItem" title="  Voltar" id="lan-w6-SEg">
                                             <connections>
                                                 <segue destination="Aab-U4-6gU" kind="show" id="DJf-X1-Ey2"/>
                                             </connections>

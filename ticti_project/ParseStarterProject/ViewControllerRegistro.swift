@@ -13,14 +13,30 @@ class ViewControllerRegistro: UIViewController
 {
     var user = PFUser()
     
+    var indicadorAtividade:UIActivityIndicatorView?
+    
     @IBOutlet var userField: UITextField!
     @IBOutlet var senhaField: UITextField!
     
+    func alerta(title:String, message:String, textoBt:String)
+    {
+        let alerta = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        alerta.addAction(UIAlertAction(title: textoBt, style: .Default, handler:
+        { (alert) -> Void in
+            
+            alerta.dismissViewControllerAnimated(true, completion: nil)
+        }
+        ))
+        
+        self.presentViewController(alerta, animated: true, completion: nil)
+    }
+    
     @IBAction func registrarFuncao(sender: AnyObject)
     {
-        if(userField == "" || senhaField == "")
+        if(userField.text == "" || senhaField.text == "")
         {
-            
+            alerta("Ops", message: "Insira corretamente usuário e senha", textoBt: "OK")
         }
         else
         {
@@ -58,7 +74,6 @@ class ViewControllerRegistro: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         
     }
     
