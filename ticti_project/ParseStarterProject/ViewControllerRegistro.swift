@@ -9,11 +9,11 @@
 import UIKit
 import Parse
 
-class ViewControllerRegistro: UIViewController
+class ViewControllerRegistro: UIViewController, UITextFieldDelegate
 {
     var user = PFUser()
     
-    var indicadorAtividade:UIActivityIndicatorView?
+    var indicadorAtividade = UIActivityIndicatorView()
     
     @IBOutlet var userField: UITextField!
     @IBOutlet var senhaField: UITextField!
@@ -40,6 +40,14 @@ class ViewControllerRegistro: UIViewController
         }
         else
         {
+            indicadorAtividade = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
+            indicadorAtividade.center = self.view.center
+            indicadorAtividade.hidesWhenStopped = true
+            indicadorAtividade.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+            self.view.addSubview(indicadorAtividade)
+            UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+            
+
             user.username = userField.text
             user.password = senhaField.text
             
@@ -51,15 +59,19 @@ class ViewControllerRegistro: UIViewController
                 {
                     (sucess, error) -> Void in
                     
+                    //encerra inidcadorAtividade
+                    self.indicadorAtividade.stopAnimating()
+                    UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                    
                     if let error = error //se existir erro
                     {
                         let errorString = error.userInfo["error"] as? String
                         
-                        print(errorString)
+                        self.alerta("Ops", message: String(errorString!), textoBt: "Ok")
                     }
                     else
                     {
-                        print("cadastro feito com sucesso!")
+                        self.alerta("Sucesso!", message: "Cadastro realizado com sucesso!", textoBt: "Uhuu!")
                     }
                 }
             )
@@ -75,6 +87,21 @@ class ViewControllerRegistro: UIViewController
     {
         super.viewDidLoad()
         
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        //teclado inteligente - parte 1
+        self.view.endEditing(true) //forca o fim da edicao
+    }
+    
+    //teclado inteigente  - parte 2
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        userField.resignFirstResponder()
+        senhaField.resignFirstResponder()
+        
+        return true
     }
     
     override func didReceiveMemoryWarning()
