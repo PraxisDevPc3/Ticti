@@ -12,16 +12,29 @@ import Parse
 
 class ViewController: UIViewController
 {
-    //var user = PFUser()
-    
-    
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        //PFUser.logOut()
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        //** verifica se o user ja ta logado
+        let currentUser = PFUser.currentUser()
         
+        if currentUser?.objectId != nil
+        {
+            self.performSegueWithIdentifier("login", sender: self) //proxima tela
+        }
+        else
+        {
+            /*mostrar tela login e signin*/
+        }
+        //fim verificacao **
     }
 
     override func didReceiveMemoryWarning()
