@@ -521,10 +521,31 @@
             </objects>
             <point key="canvasLocation" x="-523" y="101"/>
         </scene>
-        <!--Item 2-->
+        <!--Perfil-->
+        <scene sceneID="aa8-Wr-whN">
+            <objects>
+                <viewController id="9Qd-HV-Lg6" customClass="TabPerfilController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qK1-N5-22D"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ro-S4-jZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tB3-Ah-Prd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="icon3" id="o0P-6I-VOv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yd-yD-GL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="1334"/>
+        </scene>
+        <!--Jogos-->
         <scene sceneID="yL7-uV-Azq">
             <objects>
-                <viewController id="xlT-HJ-Pms" sceneMemberID="viewController">
+                <viewController id="xlT-HJ-Pms" customClass="TabJogosController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hrm-nU-JlI"/>
                         <viewControllerLayoutGuide type="bottom" id="iIR-eb-ijg"/>
@@ -535,17 +556,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="MVM-Lg-XX0"/>
+                    <tabBarItem key="tabBarItem" title="Jogos" image="icon2" id="MVM-Lg-XX0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvL-ZK-N0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="1147"/>
+            <point key="canvasLocation" x="297" y="717"/>
         </scene>
-        <!--Item 1-->
+        <!--Contatos-->
         <scene sceneID="XfC-Wf-CT5">
             <objects>
-                <viewController id="kVp-z0-brg" sceneMemberID="viewController">
+                <viewController id="kVp-z0-brg" customClass="TabContatosController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I5f-ID-Evm"/>
                         <viewControllerLayoutGuide type="bottom" id="Scg-9n-s8M"/>
@@ -556,12 +577,12 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="qmp-w0-i2O"/>
+                    <tabBarItem key="tabBarItem" title="Contatos" image="icon1" id="qmp-w0-i2O"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8E-3P-Zrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="500"/>
+            <point key="canvasLocation" x="297" y="101"/>
         </scene>
         <!--Perfil View Controller-->
         <scene sceneID="ZHh-6l-9sD">
@@ -677,6 +698,7 @@
                     <connections>
                         <segue destination="kVp-z0-brg" kind="relationship" relationship="viewControllers" id="BLh-am-qk2"/>
                         <segue destination="xlT-HJ-Pms" kind="relationship" relationship="viewControllers" id="dUP-zY-AzW"/>
+                        <segue destination="9Qd-HV-Lg6" kind="relationship" relationship="viewControllers" id="orc-bY-Sjx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07F-Lc-yml" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -686,6 +708,9 @@
     </scenes>
     <resources>
         <image name="UserCircle.png" width="256" height="256"/>
+        <image name="icon1" width="30" height="30"/>
+        <image name="icon2" width="30" height="30"/>
+        <image name="icon3" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g8n-RB-u9D"/>

@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		09386CC21BD58C0C00287388 /* UserCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 09386CC11BD58C0C00287388 /* UserCircle.png */; settings = {ASSET_TAGS = (); }; };
 		09386CC41BD5BF3700287388 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09386CC31BD5BF3700287388 /* PerfilViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		09796B5C1BD3FFEF007D4926 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09796B5B1BD3FFEF007D4926 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		095710F21BD6A47D00F8D5A1 /* TabPerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */; settings = {ASSET_TAGS = (); }; };
+		095710F41BD6A49200F8D5A1 /* TabJogosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F31BD6A49200F8D5A1 /* TabJogosController.swift */; settings = {ASSET_TAGS = (); }; };
+		095710F61BD6A4AA00F8D5A1 /* TabContatosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */; settings = {ASSET_TAGS = (); }; };
 		09884C971BD3224A00649C5D /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09884C961BD3224A00649C5D /* ViewControllerLogin.swift */; settings = {ASSET_TAGS = (); }; };
 		09EAB1E51BCD9BED000BEC51 /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAB1E41BCD9BED000BEC51 /* ViewControllerRegistro.swift */; settings = {ASSET_TAGS = (); }; };
 		09EAB1E71BCDA803000BEC51 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EAB1E61BCDA803000BEC51 /* face.png */; settings = {ASSET_TAGS = (); }; };
@@ -28,7 +30,9 @@
 /* Begin PBXFileReference section */
 		09386CC11BD58C0C00287388 /* UserCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UserCircle.png; path = ../ParseStarterProject/UserCircle.png; sourceTree = "<group>"; };
 		09386CC31BD5BF3700287388 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
-		09796B5B1BD3FFEF007D4926 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPerfilController.swift; sourceTree = "<group>"; };
+		095710F31BD6A49200F8D5A1 /* TabJogosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabJogosController.swift; sourceTree = "<group>"; };
+		095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabContatosController.swift; sourceTree = "<group>"; };
 		09884C961BD3224A00649C5D /* ViewControllerLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		09EAB1E41BCD9BED000BEC51 /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
 		09EAB1E61BCDA803000BEC51 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face.png; path = ../ParseStarterProject/face.png; sourceTree = "<group>"; };
@@ -74,12 +78,38 @@
 			name = Perfil;
 			sourceTree = "<group>";
 		};
-		09796B5A1BD3FF40007D4926 /* TableView */ = {
+		095710ED1BD6A40900F8D5A1 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				09796B5B1BD3FFEF007D4926 /* TableViewController.swift */,
+				095710F01BD6A43F00F8D5A1 /* tab_Perfil */,
+				095710EF1BD6A43600F8D5A1 /* tab_Jogos */,
+				095710EE1BD6A41C00F8D5A1 /* tab_Contatos */,
 			);
-			name = TableView;
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		095710EE1BD6A41C00F8D5A1 /* tab_Contatos */ = {
+			isa = PBXGroup;
+			children = (
+				095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */,
+			);
+			name = tab_Contatos;
+			sourceTree = "<group>";
+		};
+		095710EF1BD6A43600F8D5A1 /* tab_Jogos */ = {
+			isa = PBXGroup;
+			children = (
+				095710F31BD6A49200F8D5A1 /* TabJogosController.swift */,
+			);
+			name = tab_Jogos;
+			sourceTree = "<group>";
+		};
+		095710F01BD6A43F00F8D5A1 /* tab_Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */,
+			);
+			name = tab_Perfil;
 			sourceTree = "<group>";
 		};
 		09884C951BD3221300649C5D /* Regitro */ = {
@@ -139,12 +169,12 @@
 			isa = PBXGroup;
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
+				814C3AC61B69877600E307BB /* Main.storyboard */,
+				095710ED1BD6A40900F8D5A1 /* TabBar */,
 				09884C9B1BD36B6500649C5D /* First View */,
 				09884C981BD3225000649C5D /* Login */,
 				09884C951BD3221300649C5D /* Regitro */,
-				09796B5A1BD3FF40007D4926 /* TableView */,
 				09386CC51BD5BF3C00287388 /* Perfil */,
-				814C3AC61B69877600E307BB /* Main.storyboard */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -264,10 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09386CC41BD5BF3700287388 /* PerfilViewController.swift in Sources */,
+				095710F41BD6A49200F8D5A1 /* TabJogosController.swift in Sources */,
+				095710F21BD6A47D00F8D5A1 /* TabPerfilController.swift in Sources */,
 				09884C971BD3224A00649C5D /* ViewControllerLogin.swift in Sources */,
+				095710F61BD6A4AA00F8D5A1 /* TabContatosController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				09EAB1E51BCD9BED000BEC51 /* ViewControllerRegistro.swift in Sources */,
-				09796B5C1BD3FFEF007D4926 /* TableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
