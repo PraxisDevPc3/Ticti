@@ -8,6 +8,7 @@
 // falta verificar se os emails de input existem, ai colocar spinners qndo for verificar isso
 // bloquear para Portaint
 // escurecer fundo spinner
+// verificar falta de internet
 
 import UIKit
 import Parse
@@ -295,6 +296,12 @@ class ViewControllerRegistro: UIViewController, UITextFieldDelegate
         userField.resignFirstResponder()
         
         return true
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        //apenas vertical
+        return UIInterfaceOrientationMask.Portrait
     }
     
     override func didReceiveMemoryWarning()

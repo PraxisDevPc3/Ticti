@@ -104,7 +104,7 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate
                             {
                                 for object in objects
                                 {
-                                    //achamos o usuario atraves do email, agora achamos o username p loga-lo!
+                                    //achamos o usuario atraves do email e agora vamos achar o username p loga-lo!
                                     let 💌:String = (object.objectForKey("username") as? String)!
                                     
                                     //login
@@ -131,7 +131,7 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate
                                         }
                                     }
                                     
-                                    //break
+                                    //break for
                                 }
                             }
                         }
@@ -206,6 +206,12 @@ class ViewControllerLogin: UIViewController, UITextFieldDelegate
         //
         
         return true
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        //apenas vertical
+        return UIInterfaceOrientationMask.Portrait
     }
 
     override func didReceiveMemoryWarning()
