@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NNs-gP-yAB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -532,8 +532,22 @@
                     <view key="view" contentMode="scaleToFill" id="tB3-Ah-Prd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeB-Fb-Ia3">
+                                <rect key="frame" x="136" y="269" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="9Qd-HV-Lg6" eventType="touchUpInside" id="7PP-CH-YHY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GeB-Fb-Ia3" firstAttribute="centerX" secondItem="tB3-Ah-Prd" secondAttribute="centerX" id="1vl-rK-RrC"/>
+                            <constraint firstItem="GeB-Fb-Ia3" firstAttribute="centerY" secondItem="tB3-Ah-Prd" secondAttribute="centerY" id="7Oo-oT-Rgp"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="icon3" id="o0P-6I-VOv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -713,6 +727,6 @@
         <image name="icon3" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g8n-RB-u9D"/>
+        <segue reference="372-nb-Cbn"/>
     </inferredMetricsTieBreakers>
 </document>

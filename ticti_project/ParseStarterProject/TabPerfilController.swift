@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Parse
 
 class TabPerfilController: UIViewController {
 
+    @IBAction func logout(sender: AnyObject)
+    {
+        PFUser.logOut()
+        
+        print("Logout")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

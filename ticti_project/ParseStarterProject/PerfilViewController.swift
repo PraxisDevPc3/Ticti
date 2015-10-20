@@ -58,7 +58,7 @@ class PerfilViewController: UIViewController, UINavigationControllerDelegate  //
                     
                 } else
                 {
-                    print("ERRO")
+                    print("--- ERRO ---")
                     
                     let errrro = error!.userInfo["error"] as? String
                     
@@ -81,7 +81,7 @@ class PerfilViewController: UIViewController, UINavigationControllerDelegate  //
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = true
             
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
@@ -92,7 +92,7 @@ class PerfilViewController: UIViewController, UINavigationControllerDelegate  //
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = true
             
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
@@ -130,7 +130,11 @@ class PerfilViewController: UIViewController, UINavigationControllerDelegate  //
         self.userImage.layer.borderWidth = 3.0
         self.userImage.clipsToBounds = true
         self.userImage.layer.borderColor = UIColor.grayColor().CGColor
-
+        
+        if PFUser.currentUser()?.objectId != nil
+        {
+            print("user esta logado")
+        }
     }
 
     override func didReceiveMemoryWarning()
