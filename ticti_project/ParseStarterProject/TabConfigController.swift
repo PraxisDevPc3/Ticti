@@ -1,14 +1,15 @@
 //
-//  TabContatosController.swift
+//  TabConfigController.swift
 //  ParseStarterProject-Swift
 //
-//  Created by Pedro Campos on 10/20/15.
+//  Created by Pedro Campos on 10/21/15.
 //  Copyright © 2015 Parse. All rights reserved.
 //
 
 import UIKit
 
-class TabContatosController: UIViewController {
+class TabConfigController: UIViewController
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,12 @@ class TabContatosController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        //apenas vertical
+        return UIInterfaceOrientationMask.Portrait
     }
     
 

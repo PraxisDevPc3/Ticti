@@ -56,6 +56,8 @@ class PerfilViewController: UIViewController, UINavigationControllerDelegate  //
                 {
                     self.performSegueWithIdentifier("principal", sender: self)
                     
+                    //self.prepareForSegue(UIStoryboardSegue(, destination: <#T##UIViewController#>, sender: self)
+                    
                 } else
                 {
                     print("--- ERRO ---")

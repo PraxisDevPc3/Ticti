@@ -28,6 +28,12 @@ class TabPerfilController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        //apenas vertical
+        return UIInterfaceOrientationMask.Portrait
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -33,6 +33,8 @@ class ViewController: UIViewController
         else
         {
             /*mostrar tela login e signin*/
+            
+            print("******* NAO LOGADO *******")
         }
         //fim verificacao **
     }

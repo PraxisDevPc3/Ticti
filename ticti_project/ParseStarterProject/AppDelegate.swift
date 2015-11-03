@@ -11,16 +11,9 @@ import UIKit
 
 import Parse
 
-// If you want to use any of the UI components, uncomment this line
-// import ParseUI
-
-// If you want to use Crash Reporting - uncomment this line
-// import ParseCrashReporting
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
-
     var window: UIWindow?
 
     //--------------------------------------
@@ -31,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         
         UITabBar.appearance().tintColor = UIColor.redColor()
+        
+        
         
         //---------------------
         

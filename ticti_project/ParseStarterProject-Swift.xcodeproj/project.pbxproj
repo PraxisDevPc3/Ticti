@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09386CC21BD58C0C00287388 /* UserCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 09386CC11BD58C0C00287388 /* UserCircle.png */; settings = {ASSET_TAGS = (); }; };
-		09386CC41BD5BF3700287388 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09386CC31BD5BF3700287388 /* PerfilViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		095710F21BD6A47D00F8D5A1 /* TabPerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */; settings = {ASSET_TAGS = (); }; };
-		095710F41BD6A49200F8D5A1 /* TabJogosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F31BD6A49200F8D5A1 /* TabJogosController.swift */; settings = {ASSET_TAGS = (); }; };
-		095710F61BD6A4AA00F8D5A1 /* TabContatosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */; settings = {ASSET_TAGS = (); }; };
-		09884C971BD3224A00649C5D /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09884C961BD3224A00649C5D /* ViewControllerLogin.swift */; settings = {ASSET_TAGS = (); }; };
-		09EAB1E51BCD9BED000BEC51 /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAB1E41BCD9BED000BEC51 /* ViewControllerRegistro.swift */; settings = {ASSET_TAGS = (); }; };
-		09EAB1E71BCDA803000BEC51 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EAB1E61BCDA803000BEC51 /* face.png */; settings = {ASSET_TAGS = (); }; };
+		09147EB61BDDC7C000DA76E6 /* poker.compressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09147EB21BDDC7C000DA76E6 /* poker.compressed.pdf */; };
+		09147EB71BDDC7C000DA76E6 /* xadrez.compressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09147EB31BDDC7C000DA76E6 /* xadrez.compressed.pdf */; };
+		09147EB81BDDC7C000DA76E6 /* batalhaNaval.compressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09147EB41BDDC7C000DA76E6 /* batalhaNaval.compressed.pdf */; };
+		09147EB91BDDC7C000DA76E6 /* tictac.compressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09147EB51BDDC7C000DA76E6 /* tictac.compressed.pdf */; };
+		0928536A1BD81B11006D28F4 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092853691BD81B11006D28F4 /* CategoryRow.swift */; };
+		0928536E1BD8680D006D28F4 /* SecaoTopusers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928536D1BD8680D006D28F4 /* SecaoTopusers.swift */; };
+		092853701BD91E46006D28F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0928536F1BD91E46006D28F4 /* CoreGraphics.framework */; };
+		092853741BD97282006D28F4 /* Exibe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092853731BD97282006D28F4 /* Exibe.swift */; };
+		092853771BD9E5F6006D28F4 /* Favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092853761BD9E5F6006D28F4 /* Favoritos.swift */; };
+		09386CC21BD58C0C00287388 /* UserCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 09386CC11BD58C0C00287388 /* UserCircle.png */; };
+		09386CC41BD5BF3700287388 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09386CC31BD5BF3700287388 /* PerfilViewController.swift */; };
+		095710F21BD6A47D00F8D5A1 /* TabPerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */; };
+		095710F41BD6A49200F8D5A1 /* TabJogosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095710F31BD6A49200F8D5A1 /* TabJogosController.swift */; };
+		09884C971BD3224A00649C5D /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09884C961BD3224A00649C5D /* ViewControllerLogin.swift */; };
+		09D3EF541BD73DE900FC5CE5 /* TabConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D3EF531BD73DE900FC5CE5 /* TabConfigController.swift */; };
+		09EAB1E51BCD9BED000BEC51 /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAB1E41BCD9BED000BEC51 /* ViewControllerRegistro.swift */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -28,14 +36,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09147EB21BDDC7C000DA76E6 /* poker.compressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = poker.compressed.pdf; sourceTree = "<group>"; };
+		09147EB31BDDC7C000DA76E6 /* xadrez.compressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = xadrez.compressed.pdf; sourceTree = "<group>"; };
+		09147EB41BDDC7C000DA76E6 /* batalhaNaval.compressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = batalhaNaval.compressed.pdf; sourceTree = "<group>"; };
+		09147EB51BDDC7C000DA76E6 /* tictac.compressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tictac.compressed.pdf; sourceTree = "<group>"; };
+		092853691BD81B11006D28F4 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		0928536D1BD8680D006D28F4 /* SecaoTopusers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecaoTopusers.swift; sourceTree = "<group>"; };
+		0928536F1BD91E46006D28F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		092853731BD97282006D28F4 /* Exibe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exibe.swift; sourceTree = "<group>"; };
+		092853761BD9E5F6006D28F4 /* Favoritos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favoritos.swift; sourceTree = "<group>"; };
 		09386CC11BD58C0C00287388 /* UserCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UserCircle.png; path = ../ParseStarterProject/UserCircle.png; sourceTree = "<group>"; };
 		09386CC31BD5BF3700287388 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		095710F11BD6A47D00F8D5A1 /* TabPerfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPerfilController.swift; sourceTree = "<group>"; };
 		095710F31BD6A49200F8D5A1 /* TabJogosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabJogosController.swift; sourceTree = "<group>"; };
-		095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabContatosController.swift; sourceTree = "<group>"; };
 		09884C961BD3224A00649C5D /* ViewControllerLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		09D3EF531BD73DE900FC5CE5 /* TabConfigController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabConfigController.swift; sourceTree = "<group>"; };
 		09EAB1E41BCD9BED000BEC51 /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
-		09EAB1E61BCDA803000BEC51 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face.png; path = ../ParseStarterProject/face.png; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092853701BD91E46006D28F4 /* CoreGraphics.framework in Frameworks */,
 				81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */,
 				81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */,
 				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
@@ -70,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092853751BD97286006D28F4 /* exibe qndo selecionado */ = {
+			isa = PBXGroup;
+			children = (
+				092853731BD97282006D28F4 /* Exibe.swift */,
+			);
+			name = "exibe qndo selecionado";
+			sourceTree = "<group>";
+		};
 		09386CC51BD5BF3C00287388 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,23 +108,27 @@
 			children = (
 				095710F01BD6A43F00F8D5A1 /* tab_Perfil */,
 				095710EF1BD6A43600F8D5A1 /* tab_Jogos */,
-				095710EE1BD6A41C00F8D5A1 /* tab_Contatos */,
+				095710EE1BD6A41C00F8D5A1 /* tab_Config */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
 		};
-		095710EE1BD6A41C00F8D5A1 /* tab_Contatos */ = {
+		095710EE1BD6A41C00F8D5A1 /* tab_Config */ = {
 			isa = PBXGroup;
 			children = (
-				095710F51BD6A4AA00F8D5A1 /* TabContatosController.swift */,
+				09D3EF531BD73DE900FC5CE5 /* TabConfigController.swift */,
 			);
-			name = tab_Contatos;
+			name = tab_Config;
 			sourceTree = "<group>";
 		};
 		095710EF1BD6A43600F8D5A1 /* tab_Jogos */ = {
 			isa = PBXGroup;
 			children = (
 				095710F31BD6A49200F8D5A1 /* TabJogosController.swift */,
+				0928536D1BD8680D006D28F4 /* SecaoTopusers.swift */,
+				092853691BD81B11006D28F4 /* CategoryRow.swift */,
+				092853761BD9E5F6006D28F4 /* Favoritos.swift */,
+				092853751BD97286006D28F4 /* exibe qndo selecionado */,
 			);
 			name = tab_Jogos;
 			sourceTree = "<group>";
@@ -140,7 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				814C3AC81B69877600E307BB /* Images.xcassets */,
-				09EAB1E61BCDA803000BEC51 /* face.png */,
+				09147EB21BDDC7C000DA76E6 /* poker.compressed.pdf */,
+				09147EB31BDDC7C000DA76E6 /* xadrez.compressed.pdf */,
+				09147EB41BDDC7C000DA76E6 /* batalhaNaval.compressed.pdf */,
+				09147EB51BDDC7C000DA76E6 /* tictac.compressed.pdf */,
 				09386CC11BD58C0C00287388 /* UserCircle.png */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -182,6 +214,7 @@
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0928536F1BD91E46006D28F4 /* CoreGraphics.framework */,
 				81BA816B1A49DB6800E65899 /* Bolts.framework */,
 				81BA816C1A49DB6800E65899 /* Parse.framework */,
 				81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */,
@@ -262,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09147EB61BDDC7C000DA76E6 /* poker.compressed.pdf in Resources */,
+				09147EB81BDDC7C000DA76E6 /* batalhaNaval.compressed.pdf in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
-				09EAB1E71BCDA803000BEC51 /* face.png in Resources */,
 				09386CC21BD58C0C00287388 /* UserCircle.png in Resources */,
+				09147EB91BDDC7C000DA76E6 /* tictac.compressed.pdf in Resources */,
+				09147EB71BDDC7C000DA76E6 /* xadrez.compressed.pdf in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,10 +333,14 @@
 				095710F41BD6A49200F8D5A1 /* TabJogosController.swift in Sources */,
 				095710F21BD6A47D00F8D5A1 /* TabPerfilController.swift in Sources */,
 				09884C971BD3224A00649C5D /* ViewControllerLogin.swift in Sources */,
-				095710F61BD6A4AA00F8D5A1 /* TabContatosController.swift in Sources */,
+				0928536E1BD8680D006D28F4 /* SecaoTopusers.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				09D3EF541BD73DE900FC5CE5 /* TabConfigController.swift in Sources */,
+				092853771BD9E5F6006D28F4 /* Favoritos.swift in Sources */,
 				09EAB1E51BCD9BED000BEC51 /* ViewControllerRegistro.swift in Sources */,
+				0928536A1BD81B11006D28F4 /* CategoryRow.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				092853741BD97282006D28F4 /* Exibe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
